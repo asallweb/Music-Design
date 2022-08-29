@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220827121951">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220829121548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,12 @@
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item active"><a href="" class="menu__link">Intro</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Arrangement</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Words and Melody</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Training</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Recording</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Mixing</a></li>
+								<li class="menu__item active"><a href="" class="menu__link" data-goto="#intro">Intro</a></li>
+								<li class="menu__item"><a href="" class="menu__link" data-goto="#arrangement">Arrangement</a></li>
+								<li class="menu__item"><a href="" class="menu__link" data-goto="#melody">Words and Melody</a></li>
+								<li class="menu__item"><a href="" class="menu__link" data-goto="#training">Training</a></li>
+								<li class="menu__item"><a href="" class="menu__link" data-goto="#recording">Recording</a></li>
+								<li class="menu__item"><a href="" class="menu__link" data-goto="#mixing">Mixing</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -50,12 +50,12 @@
 					</button>
 				</div>
 			</section>
-			<section class="large-text">
+			<section class="large-text" id="intro">
 				<div class="large-text__container">
 					music design was founded on a belief in the power of 'live'. We connect, inspire and create massive impact through music, culture and space.
 				</div>
 			</section>
-			<section class="text-line">
+			<section class="text-line" id="arrangement">
 				<div class="text-line__horizont text-line__horizont_1000">
 					<span class="text-line__outline">Arrangement</span>
 					Arrangement
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-line">
+			<section class="text-line" id="melody">
 				<div class="text-line__horizont text-line__horizont_1200">
 					<span class="text-line__outline">Words an</span>d Melody
 					<span class="text-line__outline">Words an</span>d Melody
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-line">
+			<section class="text-line" id="training">
 				<div class="text-line__horizont text-line__horizont_600">
 					<span class="text-line__outline">training</span>
 					training
@@ -102,7 +102,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-line">
+			<section class="text-line" id="recording">
 				<div class="text-line__horizont text-line__horizont_600">
 					<span class="text-line__outline">Recording</span>
 					Recording
@@ -119,7 +119,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-line">
+			<section class="text-line" id="mixing">
 				<div class="text-line__horizont text-line__horizont_440">
 					<span class="text-line__outline">mixing</span>
 					mixing
@@ -378,11 +378,35 @@
 						<img src="img/logo.svg" alt="">
 					</a>
 					<div class="footer__menu">
-
+						<a href="" class="footer__menu-link" data-goto="#intro">Promo</a>
+						<a href="" class="footer__menu-link" data-goto="#arrangement">Arrangement</a>
+						<a href="" class="footer__menu-link" data-goto="#melody">Words and Melody</a>
+						<a href="" class="footer__menu-link" data-goto="#training">Training</a>
+						<a href="" class="footer__menu-link" data-goto="#recording">Recording</a>
+						<a href="" class="footer__menu-link" data-goto="#mixing">Mixing</a>
 					</div>
 					<div class="footer__socials">
-
+						<a href="" class="footer__socials-link">
+							instagram
+							<img src="img/footer__socials-link.svg" alt="">
+						</a>
+						<a href="" class="footer__socials-link">
+							soundcloud
+							<img src="img/footer__socials-link.svg" alt="">
+						</a>
+						<a href="" class="footer__socials-link">
+							facebook
+							<img src="img/footer__socials-link.svg" alt="">
+						</a>
+						<a href="" class="footer__socials-link">
+							twitter
+							<img src="img/footer__socials-link.svg" alt="">
+						</a>
 					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__bottom-copy">©2021 musicdesign. All rights reserved.</div>
+					<div class="footer__bottom-slogan">MUSIC. CULTURE. SPACE.</div>
 				</div>
 			</div>
 		</footer>
@@ -397,7 +421,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220827121951"></script>
+	<script src="js/app.min.js?_v=20220829121548"></script>
 </body>
 
 </html>
