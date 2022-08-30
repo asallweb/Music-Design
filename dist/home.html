@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220830094252">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220830140002">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -188,16 +188,36 @@
 				<div class="artists__slider">
 					<div class="artists__wrapper swiper-wrapper">
 						<div class="artists__slide swiper-slide">
-							<picture><source srcset="img/image-9.webp" type="image/webp"><img src="img/image-9.png" alt="" class="artists__image"></picture>
-							<button class="artists__play">PLAY</button>
+							<button class="artists__play" data-videoId="video1">PLAY</button>
+							<video width="100%" poster="img/image-9.png" id="video1">
+								<source src="files/mov_bbb.mp4" type="video/mp4">
+								<source src="files/mov_bbb.ogg" type="video/ogg">
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div class="artists__slide swiper-slide">
-							<picture><source srcset="img/image-3.webp" type="image/webp"><img src="img/image-3.png" alt="" class="artists__image"></picture>
-							<button class="artists__play">PLAY</button>
+							<button class="artists__play" data-videoId="video2">PLAY</button>
+							<video width="100%" poster="img/image-9.png" id="video2">
+								<source src="files/mov_bbb.mp4" type="video/mp4">
+								<source src="files/mov_bbb.ogg" type="video/ogg">
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 						<div class="artists__slide swiper-slide">
-							<picture><source srcset="img/image-4.webp" type="image/webp"><img src="img/image-4.png" alt="" class="artists__image"></picture>
-							<button class="artists__play">PLAY</button>
+							<button class="artists__play" data-videoId="video3">PLAY</button>
+							<video width="100%" poster="img/image-9.png" id="video3">
+								<source src="files/mov_bbb.mp4" type="video/mp4">
+								<source src="files/mov_bbb.ogg" type="video/ogg">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+						<div class="artists__slide swiper-slide">
+							<button class="artists__play" data-videoId="video4">PLAY</button>
+							<video width="100%" poster="img/image-9.png" id="video4">
+								<source src="files/mov_bbb.mp4" type="video/mp4">
+								<source src="files/mov_bbb.ogg" type="video/ogg">
+								Your browser does not support HTML5 video.
+							</video>
 						</div>
 					</div>
 					<div class="artists__nav">
@@ -421,7 +441,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220830094252"></script>
+	<script src="js/app.min.js?_v=20220830140002"></script>
 </body>
 
 </html>

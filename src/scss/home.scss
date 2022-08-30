@@ -1,0 +1,328 @@
+//====================================================================================================
+
+//====================================================================================================
+
+.round{
+	position: relative;
+	&__btn{
+		position: relative;
+		display: block;
+		@include adaptiveValue("width",  440, 260);
+		@include adaptiveValue("height", 440, 260);
+		margin-left:  auto;
+		margin-right: auto;
+		&_learn-more{
+			@include adaptiveValue("margin-top",    156, 52);
+			@include adaptiveValue("margin-bottom", 116, 38);
+		}
+		&_follow-us{
+			@include adaptiveValue("margin-top",    180, 60);
+			@include adaptiveValue("margin-bottom", 110, 38);
+		}
+	}
+	&__btn-logo{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		@include adaptiveValue("width", 124, 82);
+		&_instagram{
+			width: 20px;
+		}
+	}
+	&__btn-round{
+		width: 100%;
+		animation:spin 10s linear infinite;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+	}
+	@-moz-keyframes spin { 
+		100% { -moz-transform: rotate(360deg); } 
+	}
+	@-webkit-keyframes spin { 
+		100% { -webkit-transform: rotate(360deg); } 
+	}
+	@keyframes spin { 
+		100% { 
+				-webkit-transform: rotate(360deg); 
+				transform:rotate(360deg); 
+		} 
+	}
+}
+.large-text{
+	@include adaptiveValue("margin-top",    116, 38);
+	@include adaptiveValue("margin-bottom", 200, 66);
+	@include adaptiveValue("font-size",     100, 30);
+	@include adaptiveValue("line-height",   128, 40);
+	@include adaptiveValue("padding-left",  170, 0);
+	@include adaptiveValue("padding-right", 170, 0);
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+.text-line{
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	overflow: hidden;
+	white-space: nowrap;
+	@include adaptiveValue("font-size", 160, 53);
+	@include adaptiveValue("line-height", 204, 68);
+	@include adaptiveValue("margin-top", 200, 66);
+	@include adaptiveValue("margin-bottom", 120, 40);
+	&__horizont{
+		&_1200{
+			@include adaptiveValue("margin-left", -1200, -400);
+		}
+		&_1000{
+			@include adaptiveValue("margin-left", -1000, -333);
+		}
+		&_900{
+			@include adaptiveValue("margin-left", -900, -300);
+		}
+		&_600{
+			@include adaptiveValue("margin-left", -600, -200);
+		}
+		&_440{
+			@include adaptiveValue("margin-left", -440, -147);
+		}
+		&_180{
+			@include adaptiveValue("margin-left", -180, -60);
+		}
+	}
+	&__outline{
+		font-family: 'MADE Outer Sans Outline Alt';
+	}
+}
+.image-text{
+	position: relative;
+	@include adaptiveValue("margin-top", 120, 40);
+	@include adaptiveValue("margin-bottom", 200, 66);
+	&__container{
+		display: flex;
+		flex-direction: column;
+		&_text-right{
+			align-items: flex-end;
+		}
+	}
+	&__image{
+		width: 100%;
+	}
+	&__text{
+		@include adaptiveValue("font-size",    40,  14);
+		@include adaptiveValue("line-height",  69,  23);
+		@include adaptiveValue("margin-top", -170, -58);
+		width: 50%;
+		font-weight: 400;
+	}
+	@media (max-width:$mobile){
+		&__text{
+			width: 100%;
+		}
+	}
+}
+.gallery{
+	margin-left: 30px;
+	@include adaptiveValue("margin-top", 120, 40);
+	@include adaptiveValue("margin-bottom", 200, 66);
+	&__image{
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	&__title{
+		font-weight: 400;
+		@include adaptiveValue("font-size", 40, 14);
+		@include adaptiveValue("line-height", 69, 23);
+	}
+	@media (max-width:$pc){
+		&__slide{
+			width: 33vw;
+		}
+	}
+	@media (max-width:$mobile){
+		&__slide{
+			width: 40vw;
+		} 
+	}
+	@media (max-width:$mobileSmall){
+		&__slide{
+			width: 60vw;
+		} 
+	}
+}
+.artists{
+	margin-left: 30px;
+	@include adaptiveValue("margin-top", 120, 40);
+	@include adaptiveValue("margin-bottom", 200, 66);
+	&__slide{
+		position: relative;
+		width: calc( 100vw - 90px);
+	}
+	&__image{
+		width: 100%;
+	}
+	&__play{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #000;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("width", 287, 80);
+		@include adaptiveValue("height", 287, 80);
+		@include adaptiveValue("font-size", 40, 14);
+		@include adaptiveValue("line-height", 51, 17);
+		transition: all .3s ease-out;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+	&__nav{
+		margin-left: -30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+		gap: 20px;
+	}
+	&__button{
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 80, 26);
+		@include adaptiveValue("line-height", 102, 34);
+		&.swiper-button-disabled{
+			font-family: 'MADE Outer Sans Outline Alt';
+		}
+	}
+	&__outline-delimetr{
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 80, 26);
+		@include adaptiveValue("line-height", 102, 34);
+	}
+}
+.music{
+	@include adaptiveValue("margin-top", 100, 33);
+	@include adaptiveValue("margin-bottom", 100, 33);
+	&__container{
+		&::after{
+			content:"";
+			position: relative;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			display: block;
+			@include adaptiveValue("margin-top", 100, 33);
+		}
+	}
+	&__item{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptiveValue("margin-bottom", 40, 30);
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__title{
+		width: 100%;
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 40, 14);
+		@include adaptiveValue("line-height", 51, 17);
+		@include adaptiveValue("margin-bottom", 64, 22);
+		&_before{
+			font-family: 'MADE Outer Sans Outline Alt';
+		}
+	}
+	&__image{
+		width: 100%;
+		@include adaptiveValue("max-width", 287, 140);
+		@include adaptiveValue("margin-right", 40, 15);
+		img{
+			width: 100%;
+		}
+	}
+	&__name{
+		font-weight: 400;
+		@include adaptiveValue("font-size", 24, 14);
+		@include adaptiveValue("line-height", 60, 20);
+		@include adaptiveValue("margin-right", 40, 15);
+	}
+	&__player{
+		flex: 1 0 auto;
+		audio{
+			width: 100%;
+		}
+	}
+	@media (max-width:$mobile){
+		&__name{
+			flex: 1 0 auto;
+		}
+		&__player{
+			width: 100%;
+			@include adaptiveValue("margin-top", 40, 30);
+		}
+	}
+}
+.simple-gallery{
+	margin-left: 30px;
+	@include adaptiveValue("margin-top", 120, 40);
+	@include adaptiveValue("margin-bottom", 200, 66);
+	&__image{
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	@media (max-width:$mobileSmall){
+		&__slide{
+			width: 70vw;
+		} 
+	}
+}
+.call-us{
+	@include adaptiveValue("margin-top", 200, 67);
+	@include adaptiveValue("margin-bottom", 30, 20);
+	text-align: center;
+	&__phone{
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 114, 38);
+		@include adaptiveValue("line-height", 150, 50);
+		span{
+			font-family: 'MADE Outer Sans Outline Alt';
+		}
+	}
+	@media (max-width:$pc){
+		&__phone{
+			@include adaptiveValue("font-size", 96, 38);
+		}
+	}
+	@media (max-width:1160px){
+		&__phone{
+			@include adaptiveValue("font-size", 80, 38);
+		}
+	}
+	@media (max-width:$tablet){
+		&__phone{
+			@include adaptiveValue("font-size", 60, 38);
+		}
+	}
+	@media (max-width:$mobile){
+		&__phone{
+			@include adaptiveValue("font-size", 50, 22);
+		}
+	}
+	@media (max-width:$mobileSmall){
+		&__phone{
+			@include adaptiveValue("font-size", 30, 22);
+			@include adaptiveValue("line-height", 40, 28);
+		}
+	}
+}
