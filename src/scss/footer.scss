@@ -1,0 +1,64 @@
+.footer{
+	&__inner{
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+		@include adaptiveValue("margin-top", 30, 20);
+		@include adaptiveValue("margin-bottom", 40, 30);
+		@include adaptiveValue("padding-top", 140, 46);
+		@include adaptiveValue("padding-bottom", 140, 46);
+	}
+	&__menu-link{
+		font-weight: 900;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 20, 16);
+		@include adaptiveValue("line-height", 26, 20);
+		display: block;
+		margin-bottom: 28px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&__socials-link{
+		font-weight: 900;
+		@include adaptiveValue("font-size", 20, 16);
+		@include adaptiveValue("line-height", 26, 20);
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 28px;
+		display: flex;
+		align-items: center;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:hover{
+			text-decoration: underline; 
+		}
+		img{
+			margin-left: 10px;
+		}
+	}
+	&__bottom{
+		@include adaptiveValue("margin-top", 40, 30);
+		@include adaptiveValue("margin-bottom", 52, 30);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		gap: 30px;
+	}
+	@media (max-width:$mobile){
+		&__inner{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+}
